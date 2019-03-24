@@ -29,11 +29,8 @@ class Triangle
       :scalene
     end
   end
-
   class TriangleError < StandardError
-    def message
-      "That is not a valid triangle, try again."
-    end
+
   end
 
 end
