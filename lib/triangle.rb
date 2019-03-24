@@ -10,7 +10,7 @@ class Triangle
 
   def kind
     validate_tri
-    elsif a == b && b == c
+    if a == b && b == c
       :equilateral
     elsif a == b || b == c || a == c
       :isosceles
@@ -24,6 +24,7 @@ class Triangle
       raise TriangleError
     elsif a + b <= c || a + c <= b || b + c <= a
       raise TriangleError
+    end
   end
 
   class TriangleError < StandardError
